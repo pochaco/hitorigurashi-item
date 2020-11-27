@@ -1,0 +1,775 @@
+@font-face {
+    font-family: "senobi";
+    src: url("font/Senobi-Gothic-Medium.ttf");
+}
+
+@font-face {
+    font-family: "tommy";
+    src: url("font/MADE Tommy Soft Black PERSONAL USE.otf");
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", monospace;
+}
+
+h1 {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+h2 {
+    font-family: senobi;
+    font-size: 50px;
+    color: #4d4d4d;
+    text-align: center;
+    border-bottom: dotted 3px #4d4d4d;
+    padding-bottom: 15px;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+h3 {
+    font-family: tommy;
+    font-size: 45px;
+    color: white;
+    padding: 30px 0px;
+}
+
+h4 {
+    font-family: senobi;
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 15px;
+}
+
+/*header部分*/
+
+header {
+    background-color: #ff6c5a;
+    color: #4d4d4d;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/*
+
+.slider-container {
+    margin-top: -45px;
+}
+*/
+
+header li {
+    margin: 10px;
+}
+
+.slider_l {
+    transform: rotate(15deg);
+    width: 270px;
+    float: right;
+    margin-top: -45px;
+}
+
+.slider_r {
+    transform: rotate(195deg);
+    width: 270px;
+    float: right;
+    margin-top: -45px;
+}
+
+.slider_r img {
+    transform: rotate(180deg);
+}
+
+.title-container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.title-container p {
+    text-align: center;
+}
+
+/*nav部分*/
+
+.nav {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.wrap-scene {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+
+.nav img {
+    transition: 0.3s ease;
+}
+
+.nav img:hover {
+    transform: scale(1.2);
+}
+
+
+.container {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*
+    position:relative;
+    top:50px;
+*/
+}
+
+/*番号*/
+
+.room_liv,
+.room_kit,
+.room_bath {
+    position: relative;
+    width: 740px;
+}
+
+.numbers {
+    position: absolute;
+    width: 50px;
+}
+
+/*リビング番号*/
+.room_liv img:nth-of-type(1) {
+    top: 400px;
+    left: 170px;
+}
+
+.room_liv img:nth-of-type(2) {
+    top: 300px;
+    left: 210px;
+}
+
+.room_liv img:nth-of-type(3) {
+    top: 250px;
+    left: 30px;
+}
+
+.room_liv img:nth-of-type(4) {
+    top: 300px;
+    left: 510px;
+}
+
+.room_liv img:nth-of-type(5) {
+    top: 150px;
+    left: 270px;
+}
+
+.room_liv img:nth-of-type(6) {
+    top: 380px;
+    left: 410px;
+}
+
+/*キッチン番号*/
+
+.room_kit img:nth-of-type(1) {
+    top: 150px;
+    left: 90px;
+}
+
+.room_kit img:nth-of-type(2) {
+    top: 250px;
+    left: 260px;
+}
+
+.room_kit img:nth-of-type(3) {
+    top: 100px;
+    left: 570px;
+}
+
+.room_kit img:nth-of-type(4) {
+    top: 150px;
+    left: 250px;
+}
+
+.room_kit img:nth-of-type(5) {
+    top: 400px;
+    left: 410px;
+}
+
+/*バスルーム番号*/
+
+.room_bath img:nth-of-type(1) {
+    top: 380px;
+    left: 220px;
+}
+
+.room_bath img:nth-of-type(2) {
+    top: 200px;
+    left: 410px;
+}
+
+.room_bath img:nth-of-type(3) {
+    top: 350px;
+    left: 450px;
+}
+
+.room_bath img:nth-of-type(4) {
+    top: 50px;
+    left: 650px;
+}
+
+.room_bath img:nth-of-type(5) {
+    top: 250px;
+    left: 50px;
+}
+
+.room_bath img:nth-of-type(6) {
+    top: 150px;
+    left: 230px;
+}
+
+
+/*わくわく*/
+
+.wakuwaku {
+    animation: wakuwaku 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation: wakuwaku 1.5s;
+    /* Safari & Chrome */
+    -webkit-animation-iteration-count: infinite;
+
+    /*
+  margin:50px auto;
+  height: 220px; 
+  width: 180px; 
+*/
+}
+
+@keyframes wakuwaku {
+    0% {
+        transform: scale(1.0, 1.0);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes wakuwaku {
+
+    /* Safari & Chrome */
+    0% {
+        -webkit-transform: scale(1.0, 1.0);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+/*アイテム*/
+
+.line_1,
+.line_2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line_1 {
+    top: 800px;
+}
+
+.line_2 {
+    top: 1120px;
+}
+
+.wrap-item {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    color: #4d4d4d;
+    text-align: center;
+    position: relative;
+    margin: 0 33px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+.item img:first-of-type {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.item-text span {
+    font-size: 25px;
+    padding-bottom: 10px;
+    /*
+    display: inline-block;
+    padding-top: 20px;
+*/
+}
+
+.item-text p {
+    font-size: 15px;
+    /*
+    padding: 10px;
+    line-height: 1.5;
+*/
+}
+
+.living,
+.kitchen,
+.bathroom {
+    position: relative;
+    padding-bottom: 75px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.living {
+    background-color: #00abf4;
+}
+
+
+.kitchen {
+    background-color: #ff6c5a;
+}
+
+.bathroom {
+    background-color: #00abf4;
+}
+
+.fin {
+    background-color: #fff;
+    color: #4d4d4d;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    margin: 90px;
+    font-weight: bold;
+
+}
+
+footer {
+    background-color: #ff6c5a;
+    font-family: tommy;
+    color: #fff;
+    text-align: center;
+}
+
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
+
+
+
+@media screen and (max-width:750px) {
+
+    /* ここにスマホ版のCSSを書いていくよ */
+    /*
+    
+    img{
+        max-width: 100%;
+    }
+*/
+
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        letter-spacing: -2px;
+        line-height: 1.7;
+    }
+
+
+    h2 {
+        font-size: 30px;
+        width: 300px;
+        font-weight: normal;
+        padding-bottom: 5px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .line_1,
+    .line_2 {
+        display: none;
+    }
+
+
+    h4 {
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: normal;
+    }
+
+    /*header部分*/
+
+    header {
+        /*
+        background-color: #ff6c5a;
+        color: #4d4d4d;
+        position: relative;
+*/
+        height: 770px;
+        /*        overflow: hidden;*/
+    }
+
+    /*
+    header li {
+        margin: 10px;df
+    }
+*/
+
+    .slider_l {
+        /*        transform: rotate(15deg);*/
+        width: 120%;
+        float: none;
+        padding-top: 30px;
+        margin-left: -30px;
+    }
+
+    .slider_l img {
+        width: 100%;
+    }
+
+    .slider_r {
+        /*        transform: rotate(195deg);*/
+        width: 120%;
+        float: none;
+        margin-top: 460px;
+        margin-left: -30px;
+    }
+
+    .slider_r img {
+        transform: rotate(180deg);
+        width: 100%;
+    }
+
+
+    .title-container {
+        position: absolute;
+        top: 25%;
+        left: 0px;
+    }
+
+    .title-container img {
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    .title-container p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /*    nav部分*/
+
+
+    .nav {
+        /*        background-color: #fff;*/
+        padding: 60px 0;
+    }
+
+    .nav img:hover {
+        transform: scale(1.0);
+    }
+
+    .wrap-scene {
+        /*
+        display: flex;
+        justify-content: center;
+*/
+        /*        width: 100%;*/
+        flex-direction: column;
+    }
+
+
+    .nav img {
+        /*     transition: 0.3s ease;*/
+        margin-bottom: 30px;
+    }
+
+    /*
+    .nav img:hover {
+        transform: scale(1.2);
+    }
+*/
+
+
+    .container {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        /*
+    position:relative;
+    top:50px;
+*/
+    }
+
+
+    /*各部屋装飾*/
+
+    .room {
+        border: 1.7px solid #4d4d4d;
+        margin: 30px auto;
+    }
+
+    /*部屋番号*/
+
+    .room_liv,
+    .room_kit,
+    .room_bath {
+        position: relative;
+        width: 100%;
+    }
+
+    .numbers {
+        position: absolute;
+        width: 30px;
+    }
+
+    /*リビング番号*/
+    .room_liv img:nth-of-type(1) {
+        top: 200px;
+        left: 120px;
+    }
+
+    .room_liv img:nth-of-type(2) {
+        top: 100px;
+        left: 100px;
+    }
+
+    .room_liv img:nth-of-type(3) {
+        top: 140px;
+        left: 20px;
+    }
+
+    .room_liv img:nth-of-type(4) {
+        top: 180px;
+        left: 250px;
+    }
+
+    .room_liv img:nth-of-type(5) {
+        top: 70px;
+        left: 170px;
+    }
+
+    .room_liv img:nth-of-type(6) {
+        top: 240px;
+        left: 250px;
+    }
+
+    /*キッチン番号*/
+
+    .room_kit img:nth-of-type(1) {
+        top: 85px;
+        left: 40px;
+    }
+
+    .room_kit img:nth-of-type(2) {
+        top: 150px;
+        left: 130px;
+    }
+
+    .room_kit img:nth-of-type(3) {
+        top: 100px;
+        left: 300px;
+    }
+
+    .room_kit img:nth-of-type(4) {
+        top: 80px;
+        left: 120px;
+    }
+
+    .room_kit img:nth-of-type(5) {
+        top: 230px;
+        left: 200px;
+    }
+
+    /*バスルーム番号*/
+
+    .room_bath img:nth-of-type(1) {
+        top: 220px;
+        left: 170px;
+    }
+
+    .room_bath img:nth-of-type(2) {
+        top: 70px;
+        left: 210px;
+    }
+
+    .room_bath img:nth-of-type(3) {
+        top: 160px;
+        left: 200px;
+    }
+
+    .room_bath img:nth-of-type(4) {
+        top: 90px;
+        left: 320px;
+    }
+
+    .room_bath img:nth-of-type(5) {
+        top: 150px;
+        left: 50px;
+    }
+
+    .room_bath img:nth-of-type(6) {
+        top: 100px;
+        left: 140px;
+    }
+
+
+
+
+
+    /*    アイテム部分*/
+
+    /*
+    .wrap-item {
+        display: flex;
+        flex-direction: column;
+    }
+*/
+
+    .item {
+        width: 350px;
+        height: 350px;
+        border: 3px solid #4d4d4d;
+        border-radius: 20px;
+        margin: 70px auto;
+        position: relative;
+        display: flex!important;
+        align-items: center;
+        
+        
+    }
+
+    .item img:first-of-type {
+        display: none;
+    }
+
+    .good_container {
+        background-image: url(images/sp/good.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bad_container {
+        background-image: url(images/sp/bad.png);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .number-container {
+        background-color: #F9F200;
+        border: 3px solid #4d4d4d;
+        border-radius: 50px;
+        width: 50%;
+        font-family: tommy;
+        font-size: 35px;
+        position: absolute;
+        top: -40px;
+        left: 85px;
+    }
+
+
+
+    .item-text {
+        /*
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        right:0;
+        bottom:0;
+
+        margin: auto;
+*/
+        padding: 0px;
+    }
+
+
+    .item-text span {
+        font-size: 30px;
+        /*
+        display: inline-block;
+        padding-top: 20px;
+*/
+    }
+
+    .item-text p {
+        font-size: 20px;
+        padding: 5px;
+        /*        line-height: 1.5;*/
+
+    }
+
+
+    .fin {
+        font-size: 13px;
+        line-height: 25px;
+        margin: 60px 10px;
+        padding: 20px;
+    }
+
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+}
+
+.slider{
+  display: none;
+}
+.slider.slick-initialized{
+  display: block; /*slick-initializedが付与されたら表示*/
+}
